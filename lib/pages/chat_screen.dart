@@ -119,11 +119,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 hintText: 'Enter your Message',
                 suffixIcon: IconButton(
                   onPressed: () async {
-                    _textEditingController.clear();
-                    addMessage();
-                    _scrollController.animateTo(0.0,
-                        duration: Duration(microseconds: 300),
-                        curve: Curves.easeOut);
+
                   },
                   icon: Icon(
                     Icons.send,
